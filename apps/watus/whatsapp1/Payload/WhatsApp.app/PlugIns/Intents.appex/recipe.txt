@@ -1,0 +1,61 @@
+PHONE NUMBER: 4085559080
+RTL: no
+LANGUAGE: en
+LOCALE: en-EN
++PRINT StartingRegister
+
+# Welcome screen
+Agree & Continue
+
+# Verify number (sms code step is skipped)
++SuppressAlertTap true
++TypePhoneNumber
+Done
++Delay 5
+
+
+# Skip iCloud restore
++LeftButton
+Skip Restore
++SuppressAlertTap false
+
+# Profile section
+Push name
++Type Jack
+Done
+
++ClearAllChats
++SSNAME CHAT-SHARE
++PRINT *****STARTING CHAT-SHARE
+
++BottomTabBar 4
++RightButton
++TapOK
++SearchBar
++Type Inc
++TakeScreenshot
+Incredible
+
++TakeScreenshot
++HideKeyboard
+Voice Message button
++Delay 3
++SendVoiceMSG
++Delay 3
+
+Share Media
+contact
++TakeScreenshot
++SearchBar
++Type Sally
+Sally
++RightButton
+
+Share Media
+Photo & Video Library
++TakeScreenshot
++SelectFromCameraRoll # Selects the first image in the camera roll
++TakeScreenshot
+SEND_FULL
++TakeScreenshot
++LeftButton
